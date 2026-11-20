@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#10130f"><meta name="description" content="Check whether your code repository is ready for coding agents and new contributors. Runs locally in your browser."><meta name="robots" content="index,follow"><title>Agent Ready Lab</title>
+<link rel="stylesheet" href="/styles.css"></head>
+<body><div class="shell">
+<header class="top"><div class="brand"><div class="brandmark">↗</div>agent ready lab</div><div class="topright">LOCAL REPO CHECK · V 0.1</div></header>
+<section class="hero"><div class="eyebrow">A practical readiness check</div><h1>Make your repo ready<br>for the next contributor.</h1><p>See whether a coding agent can understand your project, run it, and make changes safely. Get a focused checklist from the files already in your repository.</p><div class="actions"><label class="btn primary" for="folder">Choose project folder&nbsp; ↗</label><input id="folder" type="file" webkitdirectory directory multiple><button class="btn" id="sample">View sample report</button><span class="subtle">No account or API key needed</span></div><div class="privacy"><i class="dot"></i> Files are inspected in this browser and never uploaded.</div></section>
+<div id="empty" class="empty">Choose a project folder to create a report. We inspect filenames and a small set of setup files locally in your browser. You can change folders at any time.</div>
+<section class="stats" aria-label="Repository summary"><div class="stat scorestat"><div><div class="statlabel">Agent readiness score</div><div class="statvalue" id="score">76<small> / 100</small></div></div><div class="score-ring"><span id="ringScore">76</span></div></div><div class="stat"><div class="statlabel">Project files</div><div class="statvalue" id="fileCount">1,284</div></div><div class="stat"><div class="statlabel">Checks passed</div><div class="statvalue" id="passed">6<small> / 9</small></div></div><div class="stat"><div class="statlabel">Top priority</div><div class="statvalue priority-value" id="priority">Add runbook</div></div></section>
+<main class="layout"><section class="card"><div class="cardhead"><h2>Readiness checks</h2><span class="count" id="repoName">SAMPLE PROJECT</span></div><div class="checks" id="checks"></div></section><aside class="rightcol"><section class="card readiness"><div class="readiness-head"><h2>Readiness profile</h2><span class="total" id="totalChecks">9 CHECKS</span></div><div class="meter"><i id="meter" class="meter-fill w-74"></i></div><div class="meterlabels"><span>Needs work</span><span>Agent ready</span></div></section><section class="card recommend"><h2>Recommended next steps</h2><div id="recommendations"></div></section></aside></main>
+<footer class="foot"><span>AGENT READY LAB · LOCAL FIRST</span><span>Checks are guidance, not a security audit.</span></footer>
+</div>
+<script src="/app.js" defer></script></body></html>
+
+
+

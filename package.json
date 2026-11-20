@@ -1,0 +1,13 @@
+{
+  "name": "agent-ready-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A local-first readiness check for coding-agent-friendly repositories.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "deploy": "npm run build && npx --yes wrangler@4.165.0 pages deploy dist --project-name agent-ready-lab"
+  }
+}
